@@ -16,10 +16,9 @@ const ApiConnect = () => {
     setConfirmPass(e.target.value);
   };
   const onClick = () => {
-    const API_URL = 'https://manemagi-api-1026.herokuapp.com/api/auth';
-
+    console.log('click');
     axios
-      .post(API_URL, {
+      .post(process.env.API_URL + '/auth', {
         email: email,
         password: pass,
         password_confirmation: confirmPass,

@@ -14,7 +14,9 @@ import { settingAndUser } from '../../types/Setting';
 /* utils */
 import { formatPriceYen, ommisionText } from '../../utils/function';
 import { formatDay } from '../../utils/FormatDate';
-import LocalStorage, { noticeStorageValues, storageKeys } from '../../modules/LocalStorage';
+/* modules */
+import { storageKeys } from '../../modules/LocalStorage';
+import Notice from '../../modules/Notice';
 
 const Shopping = (): JSX.Element => {
   const [isLineNotice, setIsLineNotice] = useState<boolean>(false);
